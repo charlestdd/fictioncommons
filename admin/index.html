@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin — Fiction Commons</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">FICTION COMMONS</a>
+    <nav><a href="/">Home</a></nav>
+  </header>
+
+  <main class="admin-page">
+    <section id="adminLogin" class="form-card">
+      <p class="eyebrow">GREY · ADMIN</p>
+      <h1>ADMIN LOGIN</h1>
+      <form id="adminLoginForm">
+        <label>Admin username
+          <input id="adminUsername" required>
+        </label>
+        <label>Password
+          <input id="adminPassword" type="password" required>
+        </label>
+        <button class="button full">ENTER ADMIN</button>
+        <p id="adminLoginMessage" class="form-message"></p>
+      </form>
+    </section>
+
+    <section id="adminPanel" class="hidden">
+      <div class="admin-heading">
+        <div>
+          <p class="eyebrow">ADMIN BOARD</p>
+          <h1>Applications</h1>
+        </div>
+        <button id="adminLogout" class="button secondary">Log out</button>
+      </div>
+
+      <div class="stat-grid admin-stats">
+        <div class="stat"><strong id="adminRegistered">—</strong><span>Registered</span></div>
+        <div class="stat"><strong id="adminApproved">—</strong><span>Approved</span></div>
+        <div class="stat"><strong id="adminPending">—</strong><span>Pending</span></div>
+      </div>
+
+      <div id="applications" class="applications"></div>
+    </section>
+  </main>
+  <script type="module" src="/assets/app.js"></script>
+</body>
+</html>
