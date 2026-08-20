@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register — Fiction Commons</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">FICTION COMMONS</a>
+    <nav><a href="/login/">Login</a></nav>
+  </header>
+
+  <main class="form-page">
+    <section class="form-card">
+      <p class="eyebrow">GREY · APPLICATION</p>
+      <h1>REGISTER!</h1>
+      <p class="muted">Tell us who you are and what you'd like to contribute.</p>
+
+      <form id="registerForm">
+        <label>Email
+          <input id="email" type="email" required autocomplete="email" placeholder="you@example.com">
+        </label>
+
+        <label>Nickname
+          <input id="nickname" type="text" required maxlength="32" placeholder="What should we call you?">
+        </label>
+
+        <fieldset>
+          <legend>What can I contribute?</legend>
+          <label class="check"><input type="checkbox" name="contribution" value="Early supporter & alpha tester"> Early supporter & alpha tester</label>
+          <label class="check"><input type="checkbox" name="contribution" value="Coder"> Coder</label>
+          <label class="check"><input type="checkbox" name="contribution" value="Funder"> Funder</label>
+          <label class="check"><input type="checkbox" name="contribution" value="Creative contributor"> Creative contributor</label>
+          <label class="check"><input type="checkbox" name="contribution" value="Community / moderation"> Community / moderation</label>
+          <label class="check"><input type="checkbox" name="contribution" value="Someone else lol"> Someone else lol</label>
+        </fieldset>
+
+        <button class="button full" type="submit">GET REGISTERED!</button>
+        <p id="formMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="/assets/app.js"></script>
+</body>
+</html>
