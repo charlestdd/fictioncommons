@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Fiction Commons</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">FICTION COMMONS</a>
+    <nav><button id="logoutButton" class="text-button">Log out</button></nav>
+  </header>
+
+  <main class="dashboard">
+    <section class="welcome">
+      <p class="eyebrow">MEMBER AREA</p>
+      <h1>Welcome to Fiction Commons.</h1>
+      <p id="memberLine" class="lead">Loading...</p>
+    </section>
+
+    <section class="dashboard-card">
+      <div>
+        <p class="eyebrow">ACCOUNT</p>
+        <h2 id="memberNickname">—</h2>
+        <p id="memberEmail" class="muted">—</p>
+      </div>
+      <div class="status-box">
+        <span>STATUS</span>
+        <strong id="memberStatus">—</strong>
+      </div>
+    </section>
+
+    <section class="dashboard-card">
+      <p class="eyebrow">NEXT</p>
+      <h2>We're working on new updates.</h2>
+      <p class="muted">One Giant Story, Today's Stories, Unfinished Business, Daily Slang, competitions, and the wider Fiction Commons system will arrive in future versions.</p>
+    </section>
+  </main>
+  <script type="module" src="/assets/app.js"></script>
+</body>
+</html>
