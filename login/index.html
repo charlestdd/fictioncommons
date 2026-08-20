@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login — Fiction Commons</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/">FICTION COMMONS</a>
+    <nav><a class="nav-button" href="/register/">Register!</a></nav>
+  </header>
+
+  <main class="form-page">
+    <section class="form-card">
+      <p class="eyebrow">MEMBER ACCESS</p>
+      <h1>LOGIN</h1>
+      <p class="muted">Approved members can access their Fiction Commons account here.</p>
+      <form id="loginForm">
+        <label>Email
+          <input id="loginEmail" type="email" required autocomplete="email">
+        </label>
+        <label>Password
+          <input id="loginPassword" type="password" required autocomplete="current-password">
+        </label>
+        <button class="button full" type="submit">LOGIN</button>
+        <p id="loginMessage" class="form-message"></p>
+      </form>
+    </section>
+  </main>
+  <script type="module" src="/assets/app.js"></script>
+</body>
+</html>
